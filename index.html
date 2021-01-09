@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="image/quiz.png" type="image/gif" sizes="16x16">
+  <title>تست حسین شناسی</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+  <h1 class="WidthError"> سلام دوست عزیز لطفا با گوشی وارد شو 🤭</h1>
+
+  <div class="step0 container-sm">
+    <div class="row px-4 my-5 mx-auto ">
+      <div class="col-12">
+        <span class="text-center font-weight-bold d-block">سلام به تست حسین شناسی خوش اومدی 😍</span>
+        <br>
+        <span class="d-block text-center">اول از همه بگو ببینم کی هسی بشناسمت</span>
+      </div>
+    </div>
+    <div class="row mx-auto text-center">
+
+      <div class="col-12">
+
+        <form class="d-flex flex-column w-75 m-auto">
+          <label class="font-weight-bold mb-3" for="validationCustom01">اسمت رو وارد کن</label>
+          <input autocomplete="false" type="text" class="form-control" id="validationCustom01">
+          <small class="nameError mb-3 mt-2"></small>
+          <a id="enterName" class="btn btn-primary" href="#" role="button">ثبت اسم</a>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="step1 container-sm">
+    <div class="row px-4 mt-4">
+      <div class="col m-auto">
+        <div class="text-center">
+          <p class="alert alert-warning">سلام <span id="name"></span> به تست حسین شناسی خوش اومدی . ماجرا از این قراره
+            که من چنتا سوال درباره ی
+            خودم ازت میپرسم ببینم چقد منو میشناسی . تستتم که تموم شد نتیجش رو اسکرین بگیر برام بفرست ببینم چکردی . خوب
+            حالا روی سطح مورد نظرت بزن
+            تا بریم سراغ اصل مطلب</p>
+          <a class="btn btn-success w-100 mb-3" href='' id='goEasy' role="button">آسون</a>
+          <a class="btn btn-warning w-100 mb-3" href='' id='goMedium' role="button">متوسط</a>
+          <a class="btn btn-danger w-100 mb-3" href='' id='goHard' role="button">سخت</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step2 container-sm px-3 mt-3">
+    <div class="soalJavab row d-flex flex-column">
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="responde d-block text-center mt-3"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="step3 container-sm mt-4">
+    <div class="row">
+      <div class="col">
+        <h2 class="w-100 text-center">جدول امتیازت</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center mt-4">
+        <div class="progress-circle">
+          <svg class="progress-bar" width="120" height="120">
+            <circle class="progress-bar__circle" stroke="#f4c842" stroke-width="14" cx="60" cy="60" r="52"
+              fill="transparent">
+              </>
+          </svg>
+          <p class="ps"></p>
+        </div>
+      </div>
+    </div>
+    <div class="row w-75 m-auto">
+      <div class="col alert  alert-secondary mt-4">
+        <p class="lead w-100 text-center">سطحت : <span id="mode"></span></p>
+        <p class="lead w-100 text-center">تعداد جوابای درستت : <span id="correct"></span></p>
+        <p class="lead w-100 text-center">تعداد جوابای غلطت : <span id="wrong"></span></p>
+        <p class="lead w-100 text-center">نظر من دربارت :<span id="myComment"></span></p>
+      </div>
+    </div>
+  </div>
+
+
+  <audio id="correctA" src="audio/correctA.wav"></audio>
+  <audio id="wrongA" src="audio/wrongA.mp3"></audio>
+
+
+  <audio id="backg" loop src="audio/backg.mp3"></audio>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

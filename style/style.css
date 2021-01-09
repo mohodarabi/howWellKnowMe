@@ -1,0 +1,111 @@
+@keyframes anime {
+    0% {
+        box-shadow: 0 0 1px 0px #e8b983;
+    }
+    20% {
+        box-shadow: 0 0 1px 2px #e8b983;
+    }
+    40% {
+        box-shadow: 0 0 1px 4px #e8b983;
+    }
+    60% {
+        box-shadow: 0 0 1px 6px #e8b983;
+    }
+    70% {
+        box-shadow: 0 0 1px 8px #e8b983;
+    }
+    100% {
+        box-shadow: 0 0 1px 10px #e8b983;
+    }
+}
+
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+@font-face {
+    font-family: Vazir;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2') format('woff2'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: Vazir !important;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden !important;
+}
+
+.step1 {
+    display: none;
+    overflow-x: hidden !important;
+}
+
+.WidthError {
+    height: 98vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.soal {
+    position: absolute;
+    top: -.6rem;
+    padding-top: 3px;
+    background-color: #ff0404b0;
+    width: 3.3rem;
+    height: 1.9rem;
+    border-radius: 5px;
+    right: 45%;
+    color: #f6f6f6;
+}
+
+.gozine {
+    height: 80px;
+    padding: 25px 0;
+}
+
+.step3 {
+    display: none;
+    overflow-x: hidden;
+}
+
+.progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    background: #f47842;
+    /* border: 5px solid #f4a142; */
+    box-shadow: 0 0 1px 8px #e8b983;
+    border-radius: 20px;
+    animation: anime 1s 1s ease-in-out infinite alternate;
+}
+
+.progress-bar__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    stroke-dashoffset: 0.3s;
+}
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent !important;
+    transition: width .6s ease;
+}
+
+.ps {
+    position: absolute;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    font-family: lato;
+    top: 49px;
+}
